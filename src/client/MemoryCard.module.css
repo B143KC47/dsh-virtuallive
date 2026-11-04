@@ -1,0 +1,8 @@
+/* Memory feedback follows the existing home card's typography and theme tokens. */
+.card { min-width: 0; border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-xl); background: var(--dsw-alias-bg-layer-1); padding: 20px; }
+.card h2 { font-weight: 500; font-size: 15px; margin: 0 0 12px; }
+.card p { margin: 0; font-size: 13px; line-height: 1.8; color: var(--dsw-alias-label-secondary); overflow-wrap: anywhere; }
+.card > p { margin-top: 8px; }
+.status { display: flex; align-items: flex-start; gap: 8px; }
+.status > :first-child { flex-shrink: 0; margin-top: 6px; }
+@media (max-width: 480px) { .card { padding: 16px; } }

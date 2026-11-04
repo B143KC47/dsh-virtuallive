@@ -1,0 +1,28 @@
+/* Device content keeps its own pixels; controls share the home panel's theme and scale. */
+.card { min-width: 0; border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-xl); background: var(--dsw-alias-bg-layer-1); padding: 20px; }
+.header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
+.header h2 { font-size: 15px; font-weight: 500; line-height: 1.5; margin: 0; overflow-wrap: anywhere; }
+.card p { color: var(--dsw-alias-label-secondary); font-size: 13px; line-height: 1.7; margin: 12px 0; overflow-wrap: anywhere; }
+.status { min-height: 22px; }
+.display { position: relative; display: flex; justify-content: center; width: fit-content; max-width: 100%; margin: 16px auto; }
+.touchscreen { display: block; width: 100%; max-width: 320px; padding: 0; margin: 0; border: 5px solid var(--dsw-alias-border-l3); border-radius: var(--dsw-radius-xl); overflow: hidden; cursor: crosshair; background: var(--dsw-alias-bg-base); touch-action: none; }
+.touchscreen img { display: block; width: 100%; height: auto; user-select: none; pointer-events: none; }
+.touchscreen:focus-visible { outline: var(--dsw-focus-ring-width) solid var(--dsw-focus-ring-color); outline-offset: 3px; }
+.touchscreen:disabled { cursor: wait; }
+.spinner { position: absolute; left: calc(50% - 10px); top: calc(50% - 10px); width: 20px; height: 20px; border: 2px solid var(--dsw-alias-border-l2); border-top-color: var(--dsw-alias-brand-primary); border-radius: 50%; animation: spin 1s linear infinite; pointer-events: none; }
+.buttons { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 16px; }
+.apps button { display: flex; flex-direction: column; align-items: flex-start; height: auto; gap: 4px; padding-block: 8px; white-space: normal; min-width: 0; text-align: left; }
+.apps small { color: var(--dsw-alias-label-secondary); font: inherit; font-size: 13px; }
+.form { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; font-size: 13px; min-width: 0; }
+.form textarea, .address input { min-width: 0; width: 100%; box-sizing: border-box; font: inherit; color: var(--dsw-alias-label-primary); background: var(--dsw-alias-bg-base); border: 1px solid var(--dsw-alias-border-l2); border-radius: var(--dsw-radius-md); padding: 8px 12px; }
+.form textarea { resize: vertical; }
+.form textarea:focus-visible, .address input:focus-visible { outline: var(--dsw-focus-ring-width) solid var(--dsw-focus-ring-color); outline-offset: 2px; }
+.inputActions { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.inputActions label { display: flex; align-items: center; gap: 8px; }
+.address { display: flex; align-items: center; gap: 8px; }
+.address input { flex: 1; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 480px) { .card { padding: 16px; } }
+@media (pointer: coarse) { .form textarea, .address input { font-size: 16px; } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }

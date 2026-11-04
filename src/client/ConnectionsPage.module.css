@@ -1,0 +1,31 @@
+/* Account settings reuse the existing settings typography and theme surfaces. */
+.main { box-sizing: border-box; width: 100%; height: 100%; min-width: 0; overflow: auto; padding: 28px clamp(20px, 4vw, 48px) 48px; background: var(--dsw-alias-bg-base); }
+.main > button { margin-bottom: 16px; }
+.section { display: flex; flex-direction: column; gap: 24px; max-width: 900px; margin: auto; color: var(--dsw-alias-label-primary); min-width: 0; font-size: 13px; line-height: 1.7; }
+.section h1, .section h2, .section h3 { font-weight: 500; margin: 0; overflow-wrap: anywhere; }
+.section h1 { font-size: 20px; line-height: 1.4; }
+.section h2 { font-size: 16px; }
+.section h3 { font-size: 15px; }
+.section p { margin: 0; color: var(--dsw-alias-label-secondary); overflow-wrap: anywhere; }
+.section a { color: var(--dsw-alias-brand-primary); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.section a:focus-visible { outline: var(--dsw-focus-ring-width) solid var(--dsw-focus-ring-color); outline-offset: 3px; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; }
+.header > div:first-child { flex: 1 1 280px; min-width: 0; }
+.header p { margin-top: 8px; }
+.group { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; }
+.card { display: flex; flex-direction: column; gap: 12px; border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-xl); padding: 16px; background: var(--dsw-alias-bg-layer-1); min-width: 0; }
+.cardHead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.tag { color: var(--dsw-alias-label-secondary); border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-md); padding: 2px 8px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.card > .actions { margin-top: auto; }
+.section .accountStatus { color: var(--dsw-alias-label-primary); }
+.section .notice { color: var(--dsw-alias-state-warn-label); }
+.qr { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-xl); padding: 16px; }
+.qr img { display: block; width: 240px; max-width: 100%; height: auto; }
+.qr > div { display: flex; flex: 1 1 180px; min-width: 0; flex-direction: column; gap: 12px; }
+.loading { min-height: 80px; display: grid; place-items: center; }
+.spinner { width: 20px; height: 20px; border: 2px solid var(--dsw-alias-border-l2); border-top-color: var(--dsw-alias-brand-primary); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+:global([data-platform='darwin']) .main { padding-top: calc(var(--dsh-frame-top-clearance) + 28px); }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }

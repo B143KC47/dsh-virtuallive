@@ -1,0 +1,239 @@
+{
+  "generator": "Built-in GPT Image tool",
+  "created": "2026-10-26",
+  "reference": {
+    "url": "https://zh.moegirl.org.cn/DeepSeek%E5%A8%98",
+    "characterAuthor": "上善无形",
+    "maidDesignAuthor": "ZipZipPipe",
+    "referenceLicense": "CC BY-NC-SA 4.0; character-derived artwork is not covered by the package's MIT code license"
+  },
+  "assets": [
+    {
+      "file": "src/client/assets/room-empty-afternoon-v2.png",
+      "width": 1672,
+      "height": 941,
+      "layer": "wallpaper",
+      "transparent": false,
+      "prompt": "Use case: style-transfer.\nInput 1 is the PRIMARY DRAWING-STYLE AUTHORITY: the blue-haired anime whale maid. Input 2 is ONLY the empty room's architecture/camera reference, NOT its rendering style.\nRedraw the completely EMPTY room from input 2 in EXACTLY THE SAME visual language as the anime girl in input 1. This must look painted by the SAME character artist for the SAME 2D game, not a realistic background pasted behind a cartoon.\nSTYLE REQUIREMENTS: clean visible blue-brown ink outlines of controlled medium weight around wall edges, window frames, baseboards and floor planks; soft flat pastel base colors; two or three broad deliberate cel-shadow shapes; restrained gentle gradient only inside a few shadow regions; stylized simplified wood without photographic grain; smooth matte surfaces without microtexture; elegant rounded anime proportions. Palette coordinated with her navy, cornflower/cyan, ivory and restrained gold: ivory walls with subtle powder-blue shadow, pale honey wood, warm cream sunlight, distant simplified blue sea and sky through the window. NO photorealism, no 3D rendering, no photographic texture, no glossy physically based reflection, no noisy brushwork, no realistic cinematic lighting. Avoid oversimplified flat vector clip art; retain refined anime linework and a beautiful polished visual-novel illustration.\nSTRUCTURE: same wide 16:9 camera, slightly elevated mostly frontal studio-room view, same back/side walls, big central back window, continuous clear plank floor. Keep the floor broad and walkable. Empty architecture ONLY. No furniture, no curtains, no rugs, no lamps, no plants, no pictures or wall decor, no people, no characters, no UI, no writing.\nDeliver one high-resolution finished clean anime room wallpaper, maximum available native resolution. The blue-haired character is a style reference and must NOT appear in the wallpaper."
+    },
+    {
+      "file": "src/client/assets/room-empty-night-v2.png",
+      "width": 1672,
+      "height": 941,
+      "layer": "wallpaper",
+      "transparent": false,
+      "prompt": "Use case: lighting-weather. Input 1 is the anime character STYLE authority; input 2 is the EMPTY ROOM edit target. Make a NIGHT version of exactly this empty anime room. Preserve every camera angle, architectural outline, window position, plank line and dimension. Keep clean visible anime ink contours and broad cel-shadow colors identical in drawing technique to the character. Change only the time of day: deep blue sea and starry indigo sky outside the window, a small moon, gentle blue-lavender moonlight on the floor, soft subtle warm ambient fill so the empty room remains readable and cozy. No realistic material texture or photography. NO furniture, curtains, rugs, lamps, plants, decor, people, characters, UI or text. Wide 16:9 maximum native resolution. The room must remain completely empty, suitable as a switchable independent wallpaper."
+    },
+    {
+      "file": "src/client/assets/furniture-sofa-v2.png",
+      "width": 1774,
+      "height": 887,
+      "layer": "sofa",
+      "transparent": true,
+      "prompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque. Target: the pale cornflower-blue sofa, ivory throw, two simplified floral cushions and one dark navy whale plush cushion. Simplify decorative patterns into clear anime motifs. Keep its mostly front-facing view and warm oak feet. Preserve the entire sofa as one layer; no other objects."
+    },
+    {
+      "file": "src/client/assets/furniture-sofa-ivory-v2.png",
+      "width": 1774,
+      "height": 887,
+      "layer": "sofa",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Edit the sofa asset in input 2. Input 1 is the character STYLE authority. Change ONLY the sofa upholstery to warm IVORY/CREAM, and change the throw to soft cornflower BLUE. Keep the navy whale cushion and two floral cushions, the whole silhouette, framing, viewpoint, dimensions and the same elegant anime outlines and cel shading EXACTLY consistent. No realistic textures. This is the alternate furniture style for the SAME game and must align at the same anchor as the original. Transparent alpha background, preserve all transparent gaps. No environment, floor, glow, text or people. Entire sofa unclipped."
+    },
+    {
+      "file": "src/client/assets/furniture-bed-v4.png",
+      "width": 1536,
+      "height": 1024,
+      "layer": "bed",
+      "transparent": true,
+      "prompt": "Use case: sketch-to-render. EDIT IMAGE 1, the bed construction drawing, into a finished Japanese anime illustration. Image 1 is the EDIT TARGET and its geometry must remain fixed. Image 2 is the linework/coloring style reference. Image 3 is the room color palette only. The bed is in one-point perspective: ALL horizontal edges stay truly horizontal. The FRONT FOOTBOARD is a RECTANGLE with its top edge from (384,550) to (1486,550), bottom edge from (384,810) to (1486,810); both front feet reach the SAME horizontal baseline y=861. The headboard is a rectangle from x=216 to1028 with horizontal top y=166 and bottom y=372. The LEFT side is visible and recedes toward the upper left. Keep these corner positions and the original camera. Do not tilt the front footboard, headboard, or foreground edge. Dress this exact bed geometry with warm honey-oak frame, ivory duvet gently draping over the front plane, cornflower-blue throw and pillows, and one small navy whale plush at the pillows. Elegant visible anime outlines and soft cel shading, matching the blue-haired character's illustration style. No photorealistic textures. Do not add mattress thickness above the guide plane that changes its camera. The result is a transparent furniture cutout, not a diagram: remove every guide stroke and beige background, fully transparent surroundings and under-bed gaps. No room, people, floor, shadow, glow, labels or grid. One 1536x1024 PNG, whole bed within canvas."
+    },
+    {
+      "file": "src/client/assets/furniture-desk-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "layer": "desk",
+      "transparent": true,
+      "prompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque. Target: ONLY the honey-oak writing desk with two side drawer pedestals, open knee space, a closed navy laptop and slim journal on top. Mostly front-facing; preserve the complete silhouette and all feet. Wood is smooth warm flat color with a handful of deliberate drawn grain lines, not a realistic texture. Clean anime outline and soft cel-shading matching the girl. No chair or room."
+    },
+    {
+      "file": "src/client/assets/furniture-chair-v2.png",
+      "width": 1312,
+      "height": 1199,
+      "layer": "chair",
+      "transparent": true,
+      "prompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque.Target: ONLY the comfortable honey-oak desk chair seen from BEHIND in three-quarter view, cream seat/back cushion, four slim legs. Simplified clean drawn fabric folds, navy-brown contours, no realistic weave. No desk or environment."
+    },
+    {
+      "file": "src/client/assets/furniture-kitchen-v3.png",
+      "width": 1254,
+      "height": 1254,
+      "layer": "kitchen",
+      "transparent": true,
+      "prompt": "Use case: sketch-to-render. EDIT IMAGE 1, a strict perspective layout drawing, into a high-definition hand-painted anime furniture cutout. Image 2 gives ONLY the illustration style, image 3 ONLY the room palette and light. Preserve the geometric silhouette, straight edges and camera from image 1 EXACTLY. Make this a beautiful compact ivory and light oak kitchenette for the left side of this anime home. The big nearest short end is at bottom LEFT, with HORIZONTAL top/bottom edges. The long cabinet front with drawers and little brass handles recedes sharply to upper RIGHT. All long depth edges converge far beyond upper-right of image. Preserve guide top corners (44,371),(520,371),(962,188),(644,188) in its 1024 square coordinate system. Cabinet bottom corners (44,885),(520,885),(962,535). Add a small sink beneath the faucet at the far end, a small cream electric kettle midway, modest simple blue ceramic cup; no floating objects. Fine navy-brown linework, clean anime cel shading blended with soft painted highlights exactly compatible with the blue-haired DS girl. Warm afternoon light from upper right. Crisp polished asset, texture restrained, not photorealistic or 3D. Completely transparent background with clean alpha; NO beige canvas, NO glow, NO full-image colored haze, no floor or wall. Keep entire cabinet within canvas and match guide scale. Output one high-resolution square PNG, no text, labels or guides."
+    },
+    {
+      "file": "src/client/assets/furniture-rug-v3.png",
+      "width": 1254,
+      "height": 1254,
+      "layer": "rug",
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Image 1 is the carpet design reference; image 2 is the anime drawing-style authority. Redraw the SAME ivory, cornflower-blue and gold ocean-wave/floral rug as a perfectly straight TOP-DOWN orthographic flat texture, viewed from directly overhead, for projection onto the floor by a 2D game renderer. The whole carpet must be a true rectangle, almost square with width:height approximately 1.04:1, ALL four corners at right angles, parallel top/bottom and parallel left/right edges. NO baked-in perspective or trapezoid, no room, no tilt, no depth view, no cast shadow. Preserve the navy border, pale cream ground, elegant blue wave ribbons and small gold/blue floral accents, with refined clean anime linework and cel-coloring, not photographic textile fibers. Fill the canvas generously with the whole rug and a modest transparent margin on all sides. One high-resolution square transparent PNG, request 1536x1536 native or highest available. Opaque rug interior, genuinely alpha-transparent exterior, no checkerboard/grid, no lettering, no furniture or people."
+    },
+    {
+      "file": "src/client/assets/furniture-phone-v3.png",
+      "width": 1254,
+      "height": 1254,
+      "layer": "phone",
+      "transparent": true,
+      "prompt": "Use case: sketch-to-render. EDIT IMAGE 1 perspective blockout into a polished anime furniture asset, keeping its exact silhouette/camera/edges and object layout. Image 2 is drawing style reference ONLY; image 3 room palette/light ONLY. A small ivory and honey oak two-drawer phone cabinet, an upright modern blue smartphone on a blue charging dock. Cabinet sits on the RIGHT foreground of this home, therefore we see its FRONT and narrow LEFT side, never its right side. All drawer/top/front bottom edges perfectly HORIZONTAL; all verticals VERTICAL, depth edges recede slightly toward UPPER LEFT. Preserve cabinet top four corners(210,340),(780,340),(874,478),(250,478), bottom front(250,878) to(874,878) in image 1's1024square. Add beautiful restrained navy wave-line ornaments on ivory drawers, tiny brass handles, small navy whale symbol on phone's simple dark blue lockscreen, NO text or numbers/logos/UI clutter. Crisp thin dark colored anime lineart, painted cel-shaded highlights, match DS girl's visual novel rendering, no photorealistic or3D rendering. Warm light upper right. Clean real alpha transparency, NO solid background, NO full-image haze or glow, NO wall or floor. Whole object with margins, very high resolution square PNG. Do not alter perspective."
+    },
+    {
+      "file": "src/client/assets/furniture-curtains-v2.png",
+      "width": 1671,
+      "height": 941,
+      "layer": "curtains",
+      "transparent": true,
+      "prompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque.Target: ONLY the brass rod and pair of open ivory curtains. Keep the LARGE OPEN MIDDLE alpha-transparent. The folds must be drawn like the girl's white apron: clean navy-lavender line art, broad ivory highlights, soft lavender cel shadows. No photographic fabric texture, window view, glass, wall or floor. Both hems and whole rod inside canvas."
+    },
+    {
+      "file": "src/client/assets/furniture-side-table-v2.png",
+      "width": 1024,
+      "height": 1536,
+      "layer": "coffee",
+      "transparent": true,
+      "prompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque.Target: ONLY the round oak side table, navy ceramic lamp with ivory shade, and small blue book. Use the exact anime outlining and cel shadow treatment of the girl. Simplify the lamp's floral motif, no linen or wood microtexture. Keep all legs and lamp intact, with genuinely transparent gaps. No environment or glow outside the object's silhouette."
+    },
+    {
+      "file": "src/client/assets/furniture-plant-v2.png",
+      "width": 1024,
+      "height": 1536,
+      "layer": "plant",
+      "transparent": true,
+      "prompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque.Target: ONLY one leafy indoor fig in an ivory pot with a simple blue whale/botanical motif. Deliberate clean leaf contours and broad two-tone anime green leaves, no realistic vein network or photographic speckling. Warm cream highlights and blue-green shadows. Entire plant and pot, alpha-transparent spaces between leaves."
+    },
+    {
+      "file": "src/client/assets/furniture-shelf-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "layer": "shelf",
+      "transparent": true,
+      "prompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque.Target: create ONLY a small TWO-TIER FLOATING WALL BOOKSHELF inspired by the bookshelves at the far right of input 3. Two honey-oak shelves joined by simple navy brackets; a few upright navy, ivory and muted blue books, a small blue whale figurine and one closed cream storage box. The shelf itself is a single complete furniture piece. Front-facing slight view of shelf tops, no wall, room, other furniture or plants. Simplify details into elegant anime line art and cel shading. No legible writing on book spines."
+    },
+    {
+      "file": "src/client/assets/resident-idle-v1.png",
+      "width": 1024,
+      "height": 1536,
+      "layer": "portrait",
+      "transparent": true,
+      "prompt": null,
+      "notes": "Original generated portrait reference; its generation prompt was not retained in this manifest."
+    },
+    {
+      "file": "src/client/assets/resident-rig-casual-side-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 16,
+      "description": "Directional identity and casual layers, right-facing side view.",
+      "prompt": "Use case: precise-object-edit. Reference is the APPROVED UPRIGHT SIDE MODEL of DS girl wearing the CASUAL blue jacket and ivory dress. Create ONE production texture atlas of SEPARATE CLEAN 2D SKELETAL PARTS matching this character exactly. Square image, maximum native resolution (2048x2048 preferred), 4 columns × 4 rows. Each of the 16 parts is CROP-CENTERED in its own grid cell with generous alpha padding, no part crosses a cell border. Parts can be different scales; registration will be done in code. Do not include any assembled character.\nRow 1, left to right: (1) back hair ONLY, long blue-to-cyan curls with ear/side bow, no face; (2) navy whale tail ONLY, no dress; (3) FAR UPPER SLEEVE ONLY from shoulder to elbow, ends PLAIN at elbow with overlap, NO cuff or hand; (4) FAR FOREARM SLEEVE from elbow down to white cuff and relaxed hand, NO shoulder.\nRow 2: (5) FAR THIGH white-tights segment ONLY hip to knee, straight vertical, no shin/ankle/foot; (6) FAR SHIN white-tights segment ONLY knee to ankle, straight vertical, no thigh or shoe; (7) FAR SHOE, strict side profile pointing RIGHT, flat horizontal sole; (8) TORSO GARMENT ONLY including neck, collar, fitted blue jacket front/back and ivory bodice to waist, with EMPTY ARMHOLES and NO arms/sleeves/hands/skirt.\nRow 3: (9) NEAR THIGH white-tights segment ONLY hip to knee straight vertical; (10) NEAR SHIN white-tights segment ONLY knee to ankle straight vertical; (11) NEAR SHOE strict side profile pointing RIGHT, flat sole identical anatomy to far shoe; (12) IVORY SKIRT ONLY waist to ruffled hem, side-profile volume, whale embroidery, no legs or torso.\nRow 4: (13) NEAR UPPER SLEEVE shoulder to elbow ends PLAIN with overlap NO cuff/hand; (14) NEAR FOREARM SLEEVE elbow to white cuff and hand, no shoulder; (15) HEAD with closed-mouth right-facing face, blue eyes, blue hair cap AND bangs/ahoge, no neck/body; (16) ONE SMALL separate blue front lock of hair, no face, no eyes, no duplicate ahoge.\nEvery joint end must include smoothly rounded painted overlap extending under its neighboring segment. No hollow cut ends or exposed interior cross-sections. Natural human limb shapes and proportions, NO bent knees, no full legs where only thighs requested. Preserve elegant visible anime outlines, soft cel color, same palette and original outfit. Genuinely transparent alpha surroundings and padding. NO ground, glow, shadow, opaque background, grid lines, labels, typography, anatomy diagram, extra limbs, full characters, cuff on upper arms, sleeves on torso, or shoes facing left."
+    },
+    {
+      "file": "src/client/assets/resident-rig-casual-front-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 16,
+      "description": "Directional identity and casual layers, front view.",
+      "prompt": "Use case: identity-preserve. Create ONE clean production 2D skeletal PARTS ATLAS of this exact DS whale girl in CASUAL clothes. Input 1 is the approved neutral model: match its upright natural anatomy, proportions, blue jacket, ivory dress, white tights, blue shoes, linework and soft cel painting. Input 2 supplies the specified viewing direction only; do NOT copy its walking pose. 4 columns by 4 rows, 16 isolated crop-centered parts with generous genuinely transparent padding, maximum available native resolution (2048 square preferred). Never draw a complete assembled figure. No text, labels, grid, shadows, glow or background. Each part must stay inside its cell. Smooth closed joint overlap areas, no hollow cross-sections.\nCells left-to-right row-by-row: 1 back hair only; 2 navy whale tail only; 3 left upper sleeve shoulder-to-elbow, plain elbow end NO cuff or hand; 4 left forearm sleeve elbow-to-white cuff and relaxed hand, NO shoulder; 5 left thigh in white tights hip-to-knee ONLY; 6 left shin white tights knee-to-ankle ONLY; 7 left shoe flat neutral sole; 8 torso clothing with neck and collar and jacket/bodice to waist, EMPTY ARMHOLES, NO arms/sleeves/skirt; 9 right thigh hip-to-knee ONLY; 10 right shin knee-to-ankle ONLY; 11 right flat shoe; 12 ivory ruffled skirt only waist-to-hem; 13 right upper sleeve shoulder-to-elbow ONLY no cuff/hand; 14 right forearm with cuff/hand ONLY no shoulder; 15 head with blue hair cap and ahoge; 16 small extra front hair locks ONLY no face or duplicate ahoge.\nALL limb bones in upright neutral alignment, no stepping, no bent knees. Upper sleeves contain no hands/cuffs, torso contains no sleeves, thighs contain no shins. The same parts will be assembled and animated by bones in a 2D game. Preserve refined anime outlines and DS whale embroidery. EVERY PART is viewed straight from the FRONT. Head faces viewer with both blue eyes and SMALL CLOSED MOUTH. White-tights left/right legs straight and symmetric with identical anatomy. Shoes show front toe caps; soles share horizontal ground. Front torso has blue jacket opening and ivory bodice."
+    },
+    {
+      "file": "src/client/assets/resident-rig-casual-back-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 16,
+      "description": "Directional identity and casual layers, back view.",
+      "prompt": "Use case: identity-preserve. Create ONE clean production 2D skeletal PARTS ATLAS of this exact DS whale girl in CASUAL clothes. Input 1 is the approved neutral model: match its upright natural anatomy, proportions, blue jacket, ivory dress, white tights, blue shoes, linework and soft cel painting. Input 2 supplies the specified viewing direction only; do NOT copy its walking pose. 4 columns by 4 rows, 16 isolated crop-centered parts with generous genuinely transparent padding, maximum available native resolution (2048 square preferred). Never draw a complete assembled figure. No text, labels, grid, shadows, glow or background. Each part must stay inside its cell. Smooth closed joint overlap areas, no hollow cross-sections.\nCells left-to-right row-by-row: 1 back hair only; 2 navy whale tail only; 3 left upper sleeve shoulder-to-elbow, plain elbow end NO cuff or hand; 4 left forearm sleeve elbow-to-white cuff and relaxed hand, NO shoulder; 5 left thigh in white tights hip-to-knee ONLY; 6 left shin white tights knee-to-ankle ONLY; 7 left shoe flat neutral sole; 8 torso clothing with neck and collar and jacket/bodice to waist, EMPTY ARMHOLES, NO arms/sleeves/skirt; 9 right thigh hip-to-knee ONLY; 10 right shin knee-to-ankle ONLY; 11 right flat shoe; 12 ivory ruffled skirt only waist-to-hem; 13 right upper sleeve shoulder-to-elbow ONLY no cuff/hand; 14 right forearm with cuff/hand ONLY no shoulder; 15 head with blue hair cap and ahoge; 16 small extra front hair locks ONLY no face or duplicate ahoge.\nALL limb bones in upright neutral alignment, no stepping, no bent knees. Upper sleeves contain no hands/cuffs, torso contains no sleeves, thighs contain no shins. The same parts will be assembled and animated by bones in a 2D game. Preserve refined anime outlines and DS whale embroidery. EVERY PART is viewed straight from the BACK. Head is back-of-head hair: NO FACE, NO EYES, NO MOUTH. Neck and torso show garment back; NO chest bow or front buttons. Shoes show rear heels, never front toe caps. Rear skirt has its back ribbons, not a duplicate front logo. Long hair back layer covers upper back but is a separate asset. Cell16 is a small separate cyan hair-tip lock."
+    },
+    {
+      "file": "src/client/assets/resident-rig-classic-wardrobe-v1.png",
+      "width": 1774,
+      "height": 887,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 21,
+      "description": "Classic clothing replacements; three views share the identity skeleton.",
+      "prompt": "Use case: precise-object-edit. Create ONE high-definition CLOTHING OVERRIDE ATLAS for the exact classic DS whale-maid outfit in input1. Inputs2/3/4 are the existing casual skeleton part atlases for FRONT/RIGHT-SIDE/BACK views; use their anatomy, part painting and drawing scale, replacing ONLY clothing. Do not draw heads, hair, faces, full characters, legs or shoes. Use polished hand-painted 2D anime linework and cel shading, navy fabric, cornflower-blue underskirt, ivory apron/ruffles, fine gold decoration, small whale motif. Never 3D.\nAtlas layout is exactly 7 columns × 3 rows. Row1 FRONT view; row2 RIGHT-FACING SIDE profile; row3 BACK view. Every part crop-centered with transparent margins and contained in its cell. Across EVERY row the seven columns are: 1 sleeveless TORSO BODICE with neck/collar and blue neck bow, ivory bib, navy waist, EMPTY ARMHOLES; 2 SKIRT+APRON ONLY waist to ruffled hem, navy outer panels, blue underskirt, ivory front apron in front/side, rear bow in back; 3 LEFT/FAR UPPER SLEEVE shoulder-to-elbow ending PLAIN, NO hand/cuff; 4 LEFT/FAR FOREARM sleeve elbow-to-cuff and relaxed hand, NO shoulder; 5 RIGHT/NEAR UPPER SLEEVE shoulder-to-elbow ending PLAIN; 6 RIGHT/NEAR FOREARM sleeve elbow-to-white cuff and relaxed hand; 7 separate ivory ruffled MAID HEADBAND ONLY from that same viewing angle, no head/hair.\nNatural neutral straight limb segments with painted joint overlap, no baked walking/bent limbs. Each row must have the proper viewing angle; rear torso has no chest/bib/front buttons. Shoes/white tights and identity parts are reused from the casual rig. All21 cells present, accurate count, no grid lines/text/labels. Genuine transparent background, no glow, matte, shadows, stray pixels or environment. Highest native resolution wide canvas, ideally 3072x1536."
+    },
+    {
+      "file": "src/client/assets/resident-rig-night-wardrobe-v1.png",
+      "width": 1774,
+      "height": 887,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 27,
+      "description": "Night clothing replacements; upper sleeves use the separate capped replacement sheet.",
+      "prompt": "Use case: precise-object-edit. Create ONE high-definition CLOTHING/LOWER-LEG OVERRIDE ATLAS for the exact modest blue nightdress and whale slippers in input1. Inputs2/3/4 are the existing casual 2D skeleton parts for FRONT/RIGHT-SIDE/BACK; preserve anatomy, joint lengths, smooth anime drawing style and pale skin. Clothing design: powder-blue long nightdress, white piping/buttons, neat collar, small blue whale chest pocket, long loose sleeves and white ruffled hem; blue whale slippers. Do not draw heads, hair, faces, whole characters, navy jackets or white tights. This is a normal game wardrobe atlas, not an anatomical display.\nExactly 9 columns × 3 rows. Row1 FRONT; row2 RIGHT-FACING SIDE profile; row3 BACK. Each isolated part crop-centered inside its equal cell, clear transparent margins, no overlap with neighboring cells. Columns of each row: 1 TORSO upper nightdress from neck/collar to waist, EMPTY ARMHOLES no sleeves; 2 LOWER NIGHTDRESS waist to ruffled below-knee hem, front buttons continue from torso, no torso/legs; 3 LEFT/FAR UPPER sleeve shoulder-to-elbow PLAIN joint end no cuff/hand; 4 LEFT/FAR FOREARM sleeve elbow-to-cuff+relaxed hand only; 5 RIGHT/NEAR UPPER sleeve shoulder-to-elbow only; 6 RIGHT/NEAR FOREARM cuff+hand elbow-to-wrist only; 7 straight pale bare THIGH segment hip-to-knee ONLY, no shin/foot; 8 straight pale SHIN segment knee-to-ankle ONLY, no thigh/foot; 9 ONE blue whale SLIPPER with foot inside, flat sole, front toe view in first row, RIGHT-facing profile in second row, rear heel view in third row.\nEvery joint includes smooth painted overlap under its neighboring segment. All27 parts present. Gentle neutral upright anatomy, no bent walking poses. Rear dress has rear seams, no front pocket/buttons. Precise consistent DS illustration style, opaque skin/clothes and actual transparent surroundings. No grids, labels, text, shadows, glow, background, random floating decoration. Highest native resolution wide canvas, ideally 3072x1536."
+    },
+    {
+      "file": "src/client/assets/resident-rig-hair-v1.png",
+      "width": 2172,
+      "height": 724,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 3,
+      "description": "Lower rear hair; native registration excludes the duplicate scalp.",
+      "prompt": "Use case: precise-object-edit. Create ONE 2D rig REAR-HAIR-ONLY atlas for the exact DS whale girl in the three references. Layout: exactly THREE crop-centered columns in one wide transparent image. Column1 right-facing side-view long rear hair; column2 front-view rear hair; column3 back-view rear hair. Render ONLY the long flowing rear hair from the NAPE ROOT down to the curled tips. The root is a narrow tapered connector that extends upward behind a separately painted head; continuous ordinary flowing strands, not a flat cut edge. NO scalp cap, NO head silhouette, NO forehead, NO face, NO eyes, NO ears/whale fins, NO bows, NO ahoge, NO neck/body/clothes/tail. All identity ornaments belong to an existing separate head layer and MUST NOT be duplicated here.\nHair color navy/cornflower at root grading to luminous cyan tips, exact refined anime ink linework and soft cel shading from the references. Hair falls mostly down by gravity with gentle layered curls, no wind-blown horizontal mane. Three separate useful high-resolution hair pieces, no crossing cell boundaries. Smooth complete alpha edges, no halo/matte glow/shadow/background/grid/labels. Maximum native resolution, wide canvas."
+    },
+    {
+      "file": "src/client/assets/resident-rig-props-v1.png",
+      "width": 2172,
+      "height": 724,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 4,
+      "description": "Independent phone, book, bowl, and spoon attached to hand joints.",
+      "prompt": "Use case: illustration-story. Create ONE high-definition 2D activity-prop atlas for the blue-haired DS whale girl in the references, matching her refined anime outlines, soft cel colors, navy/cornflower/ivory/gold palette. Four separate objects in four equal cells in a single horizontal row, genuine alpha-transparent padding. Left-to-right: (1) one small modern smartphone showing its BACK, ivory/powder-blue case with a small navy whale emblem, three-quarter angle suitable to hold in two hands; (2) one OPEN navy hardback book with subtle gold border on covers, off-white pages with very faint abstract lines but NO readable text, slight frontal elevated view suitable to hold at chest; (3) one small ivory-and-cornflower bowl of simple rice porridge, side/three-quarter view to hold near waist, NO hands; (4) one small matching spoon with a little porridge, side view, NO hand. All objects independently isolated, crisp high-resolution anime game assets. Do not include character, fingers, limbs, body, clothing, room, table, floor, cast shadow, glow, lettering, watermark or guides. Entire objects uncropped. These props will be separate layers attached to her bone rig, not new character poses."
+    },
+    {
+      "file": "src/client/assets/resident-rig-night-sleeves-v1.png",
+      "width": 1024,
+      "height": 1536,
+      "layer": "resident-rig",
+      "transparent": true,
+      "pieces": 6,
+      "description": "Closed shoulder caps for night upper sleeves in three views.",
+      "prompt": "Use case: precise-object-edit for a layered 2D anime character rig. Reference image 1 is the EXACT nightdress cloth/color/linework authority. Create a replacement sheet containing ONLY SIX detached UPPER ARM SLEEVE pieces. Layout: 3 rows by 2 columns, generous transparent margins between every piece. Row1 FRONT view far upper arm and near upper arm. Row2 RIGHT-facing SIDE view far upper arm and near upper arm. Row3 BACK view far upper arm and near upper arm. Each piece is a soft powder-blue cloth shoulder-to-elbow sleeve, same color, smooth cel shading and navy-blue thin linework as the reference. CRITICAL CORRECTION: each sleeve has a SOLID CLOSED ROUNDED SHOULDER CAP: a continuous softly rounded blue cloth dome, with cloth painted completely across the shoulder. Absolutely NO visible armhole, no dark oval cavity, no white oval rim, no tube opening anywhere at shoulder. The elbow end is a plain filled blue cloth overlap cut across near-elbow, no visible hole, no cuff or frill. These are painted animation cutouts with hidden overlap, NOT physical garment objects viewed inside. Slender relaxed hanging upper arms, slight natural cloth folds; no exaggerated puff or 3D hollow mannequin. Each sleeve length approx 2.6 times width, no forearm, wrist, fingers, hands, skin, torso, full character, head, legs or dress skirt. Keep consistent high-quality anime illustration style. True alpha transparent background and gaps; no floor, shadows, grid, labels or text. Maximum native resolution. Produce six separate intact capped upper-sleeve pieces only."
+    }
+  ],
+  "style": {
+    "authority": "src/client/assets/resident-rig-casual-side-v2.png",
+    "paletteReference": "src/client/assets/room-empty-afternoon-v2.png",
+    "rules": [
+      "Match the resident's anime line work and cel-shaded drawing style.",
+      "Use sapphire and cornflower blues, ivory, warm wood, and restrained gold accents.",
+      "Keep one camera and coherent light direction across independently generated furniture.",
+      "Keep the wallpaper architecturally empty; never bake furniture or the resident into it.",
+      "Preserve original transparent PNGs; cropping and placement belong to the renderer.",
+      "Record actual native pixel dimensions; do not describe upscaled output as native 4K."
+    ],
+    "furniturePrompt": "Use case: style-transfer. Input 1 (blue-haired whale maid) is the PRIMARY DRAWING-STYLE AUTHORITY. Input 2 is the approved anime empty-room palette and lighting reference. Input 3 is the furniture DESIGN/ANGLE reference ONLY; reject its photorealistic rendering style. Redraw ONLY the furniture object from input 3 so it unmistakably looks illustrated by the SAME ARTIST as the anime girl in input 1 for the SAME 2D game. Use elegant visible medium-weight navy-brown outlines, smooth matte flat base colors, two or three clean cel-shaded planes, a little restrained soft gradient shading, simplified material marks. Coordinate navy, cornflower blue, cyan, ivory and muted honey/gold with the resident. Absolutely NO photographic woodgrain, fabric weave, photoreal texture, realistic rendering, microdetails, painterly oil strokes, or physically based highlights. Not vector clipart: polished refined Japanese anime line art and cel coloring. Keep the reference object’s useful silhouette and viewing angle. Output one independent high-resolution transparent PNG asset. Whole object uncropped with clear margins; all empty space genuinely alpha-transparent, including gaps between legs. No background glow, floor, wall, room, characters, grid, checkerboard, words, logos or drop shadow. White portions of the object remain opaque."
+  },
+  "animation": {
+    "registration": "src/client/resident-rig-registration.ts",
+    "skeleton": "src/client/resident-skeleton.ts",
+    "camera": "Wallpaper-calibrated single vanishing point (0.535, 0.168); floor texture, furniture anchors, feet, and picking share src/home-camera.ts.",
+    "gait": "Distance-driven two-dimensional skeleton with independently painted limb layers, fixed bone lengths, opposite arm swing, and supporting foot contact.",
+    "outfits": "Classic, casual, and night replace clothing layers on the same directional identity and joints.",
+    "furniture": "Authored pelvis and torso anchors, ground contact, camera scale, and foreground masks belong to the shared furniture catalog.",
+    "idleMouth": "Closed, including when the last recorded activity is talking. Mouth animation requires an active model turn.",
+    "generationControl": "Shared identity and clothing references, explicit layer order and camera, measured native-pixel crops and joint registration, and visual assembly review. Generated constraints are not guaranteed; incorrect or duplicated regions are excluded at registration.",
+    "limits": "Custom 2D skeleton; no Cubism export, locked generation seed, or audio lip synchronization.",
+    "idle": "Continuous breathing and secondary hair motion with fixed sole contacts and localized blinking.",
+    "frameRate": "Client defaults to 60 fps, configurable 30–120. Real performance depends on device/browser load; reduced-motion and hidden views intentionally stop idle animation."
+  }
+}

@@ -1,0 +1,63 @@
+/* Room illustration uses theme surfaces; controls retain the Host's focus and color tokens. */
+.page {
+  width: 100%; height: 100%; min-height: 0; min-width: 0; overflow: auto; box-sizing: border-box; padding: 28px clamp(24px, 4vw, 48px) 48px;
+  color: var(--dsw-alias-label-primary); background: var(--dsw-alias-bg-base);
+}
+.header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; max-width: 1200px; margin: 0 auto 28px; }
+.header h1 { font-size: 28px; line-height: 1.3; font-weight: 500; margin: 8px 0; overflow-wrap: anywhere; }
+.header p { margin: 0; font-size: 13px; color: var(--dsw-alias-label-secondary); }
+.header .eyebrow { color: var(--dsw-alias-brand-primary); font-size: 13px; letter-spacing: .14em; }
+.presence { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.layout { display: flex; flex-direction: column; gap: 24px; max-width: 1200px; margin: auto; }
+.living { min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.accessNotice { margin: 0; color: var(--dsw-alias-label-secondary); font-size: 13px; line-height: 1.7; }
+
+.dialogue, .composer, .card { border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-xl); background: var(--dsw-alias-bg-layer-1); padding: 20px; }
+.dialogue h2, .card h2 { font-weight: 500; font-size: 15px; margin: 0 0 12px; }
+.dialogue p, .card p, .card li { font-size: 13px; line-height: 1.8; overflow-wrap: anywhere; white-space: pre-wrap; }
+.dialogue p { margin: 0 0 16px; max-height: 280px; overflow: auto; }
+.card p { margin: 0; color: var(--dsw-alias-label-secondary); }
+.card ul { margin: 0; padding-left: 20px; }
+.details { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.composer label { display: block; font-size: 13px; margin-bottom: 12px; }
+.inputRow { display: flex; gap: 12px; align-items: flex-end; }
+.inputRow textarea { flex: 1; min-width: 0; resize: vertical; border: 1px solid var(--dsw-alias-border-l2); border-radius: var(--dsw-radius-md); padding: 12px; font: inherit; font-size: 13px; color: var(--dsw-alias-label-primary); background: var(--dsw-alias-bg-base); }
+.inputRow textarea:focus-visible { outline: var(--dsw-focus-ring-width) solid var(--dsw-focus-ring-color); outline-offset: 2px; }
+.composer > p { font-size: 13px; line-height: 1.6; margin-bottom: 0; color: var(--dsw-alias-label-secondary); }
+.phone { position: relative; width: 150px; height: 240px; border: 5px solid var(--dsw-alias-border-l3); border-radius: 24px; margin: 20px auto 0; background: var(--dsw-alias-bg-base); display: grid; place-items: center; padding: 16px; box-sizing: border-box; text-align: center; }
+.phone > span { position: absolute; top: 8px; left: 38%; width: 24%; height: 5px; background: var(--dsw-alias-border-l3); border-radius: 4px; }
+.notice { max-width: 1200px; margin: 0 auto 16px; min-height: 36px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 13px; }
+.spinner { width: 20px; height: 20px; border: 2px solid var(--dsw-alias-border-l2); border-top-color: var(--dsw-alias-brand-primary); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+:global([data-platform='darwin']) .page { padding-top: calc(var(--dsh-frame-top-clearance) + 28px); }
+@media (max-width: 480px) { .page { padding-inline: 20px; } .header h1 { font-size: 24px; } .dialogue, .composer, .card { padding: 16px; } }
+@media (pointer: coarse) { .inputRow textarea { font-size: 16px; } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+.sceneFigure { margin: 0; border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-xl); overflow: hidden; background: var(--dsw-alias-bg-layer-1); }
+.sceneStage { position: relative; }
+.sceneCanvas { position: relative; width: 100%; aspect-ratio: 1672 / 941; }
+.sceneCanvas > img, .sceneCanvas > canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.sceneCanvas > canvas { touch-action: pan-y; }
+.sceneLoading { position: absolute; inset: 0; margin: auto; }
+.sceneCaption { padding: 12px 20px 4px; color: var(--dsw-alias-label-secondary); font-size: 13px; line-height: 1.6; }
+.places { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 12px 12px; }
+.portrait { float: left; height: 104px; width: 76px; object-fit: cover; object-position: top; margin: 0 16px 8px 0; border-radius: var(--dsw-radius-md); }
+.dialogue { display: flow-root; }
+.layerEditor { border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-xl); padding: 16px 20px; font-size: 13px; background: var(--dsw-alias-bg-layer-1); }
+.layerEditor summary { cursor: pointer; font-weight: 500; }
+.layerEditor summary:focus-visible { outline: var(--dsw-focus-ring-width) solid var(--dsw-focus-ring-color); outline-offset: 4px; }
+.layerEditor p { line-height: 1.7; color: var(--dsw-alias-label-secondary); }
+.layerActions, .layerChoices, .layerControls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.layerControls { border: 1px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-md); padding: 12px; min-width: 0; }
+.layerControls legend { padding: 0 8px; }
+.card > button { margin-top: 12px; }
+.phoneHeader { max-width: 680px; margin: 0 auto 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.phoneHeader h1 { margin: 0; font-size: 24px; font-weight: 500; line-height: 1.4; overflow-wrap: anywhere; }
+.phonePage { max-width: 680px; margin: auto; }
+.header h1:focus, .phoneHeader h1:focus { outline: none; }
+.mode { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; min-width: 0; font-size: 13px; }
+.mode > label { color: var(--dsw-alias-label-secondary); }
+.mode select { min-width: 0; max-width: 220px; border: 1px solid var(--dsw-alias-border-l2); border-radius: var(--dsw-radius-md); padding: 6px 8px; font: inherit; color: var(--dsw-alias-label-primary); background: var(--dsw-alias-bg-layer-1); }
+.mode select:focus-visible { outline: var(--dsw-focus-ring-width) solid var(--dsw-focus-ring-color); outline-offset: 2px; }
+.modeError { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; color: var(--dsw-alias-label-secondary); }
+@media (pointer: coarse) { .mode select { font-size: 16px; } }

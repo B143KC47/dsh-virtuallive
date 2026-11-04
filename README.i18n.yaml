@@ -1,0 +1,61 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/dsh-virtuallive/README.md
+/:
+  en: 1acf1f0daf175a59
+  zh: e39fd1378fc43d54
+/deepseek-ai-dsh-experimental-dsh-virtuallive:
+  en: 54c0f063208c75da
+  zh: 13200848dfb0770e
+/deepseek-ai-dsh-experimental-dsh-virtuallive/summary:
+  en: 1b263e3cf13162c3
+  zh: 65fcc139def7b3d8
+/deepseek-ai-dsh-experimental-dsh-virtuallive/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 54dc7d88a6a9b88d
+/deepseek-ai-dsh-experimental-dsh-virtuallive/use-this-package:
+  en: 1fb921c6e0676d67
+  zh: db51360b5b25419a
+/deepseek-ai-dsh-experimental-dsh-virtuallive/understand-the-implementation:
+  en: 15c376da02158455
+  zh: c5050acc8181227b
+/deepseek-ai-dsh-experimental-dsh-virtuallive/further-exploration:
+  en: 685ebb856e5ba16f
+  zh: 5d84b872ca04d604
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience:
+  en: 215e7ba838619b7b
+  zh: 215e7ba838619b7b
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-persona:
+  en: 22d5e55442462fe9
+  zh: c1ecde7fff82caa7
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-persona/what-the-model-sees:
+  en: 44d0bf617acc3495
+  zh: a2a7166e10df5c54
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-persona/what-the-model-sees/stable-persona-instructions:
+  en: 05bb4c21417264d0
+  zh: cc74756047fd3983
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-persona/token-effect:
+  en: f54f1897126b9d5d
+  zh: 768cac872a85cbef
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-persona/kv-cache-effect:
+  en: 462be9b373cbc504
+  zh: f0623a07b2acafff
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-tools:
+  en: 2afeb88462131945
+  zh: 99bc417631c5367f
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-tools/what-the-model-sees:
+  en: 74a28facc9141777
+  zh: db40b2beefc848ba
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-tools/token-effect:
+  en: e8c41cd3dc2c89a9
+  zh: 8f4c0342cfe16bab
+/deepseek-ai-dsh-experimental-dsh-virtuallive/model-experience/resident-tools/kv-cache-effect:
+  en: 00c90a306b217903
+  zh: 98ee900bf0297b3d
+/deepseek-ai-dsh-experimental-dsh-virtuallive/known-limitations-and-deferred-work:
+  en: a0efef9265c8ab53
+  zh: 7bf636ab7423b16f
+/deepseek-ai-dsh-experimental-dsh-virtuallive/known-limitations-and-deferred-work/dev-note:
+  en: e67f633dc6fe7773
+  zh: e88aeb617ffb74ea

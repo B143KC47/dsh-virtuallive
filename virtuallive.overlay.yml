@@ -1,0 +1,4 @@
+# Optional resident and home panel for the DSH Web profile.
+- insert:
+    - id: virtuallive
+      name: '@deepseek-ai/dsh-experimental-dsh-virtuallive'
