@@ -1,0 +1,25 @@
+diff --git a/packages/api/session-controller/src/agent.ts b/packages/api/session-controller/src/agent.ts
+index d16e041773..e8fbb8a501 100644
+--- a/packages/api/session-controller/src/agent.ts
++++ b/packages/api/session-controller/src/agent.ts
+@@ -179,0 +180,2 @@ export class ApiSessionAgentController {
++    const owned = await this.ctx.waterfall('api-session/resolve-agent', { sessionId }, async () => undefined)
++    if (owned !== undefined) return { agent: owned }
+diff --git a/packages/api/session-controller/src/types.ts b/packages/api/session-controller/src/types.ts
+index 8c6da77a60..22e8ea2c6f 100644
+--- a/packages/api/session-controller/src/types.ts
++++ b/packages/api/session-controller/src/types.ts
+@@ -2,0 +3 @@
++import type { Agent } from '@deepseek-ai/dsh-agent'
+@@ -607,0 +609,11 @@ declare module '@deepseek-ai/cordis' {
++    /**
++     * Resolve a Session whose Agent composition and lifetime have a dedicated owner.
++     * The owner returns the fully initialized Agent for the requested identity; other
++     * listeners delegate with `next()`. The default returns undefined, leaving ordinary
++     * histories cold and ordinary command activation to the Session API.
++     * @mode waterfall
++     * @param request.sessionId - Session to activate for a Session API read or command.
++     * @param next - Continue to the next owner, or return undefined when no owner claims it.
++     * @returns The fully initialized live Agent, or undefined for an ordinary Session.
++     */
++    'api-session/resolve-agent'(request: { sessionId: SessionId }, next: () => Promise<Agent | undefined>): Promise<Agent | undefined>

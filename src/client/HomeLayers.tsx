@@ -2,7 +2,7 @@
 import { useState, type ReactNode } from 'react'
 import { Button } from '@deepseek-ai/dsh-client-ui-primitives'
 import type { PropsLocale } from '@deepseek-ai/dsh-client-ui-slots'
-import { HOME_LAYER_IDS, initialHomeLayout } from '../home-space.ts'
+import { HOME_LAYER_IDS, HOME_SPACE, initialHomeLayout } from '../home-space.ts'
 import { HOME_FURNITURE } from '../home-catalog.ts'
 import type { HomeLayerId, HomeLayerPlacement, HomeLayout } from '../types.ts'
 import css from './Home.module.css'
@@ -48,9 +48,9 @@ export function HomeLayers({ layout, revision, disabled, error, arrange, reconne
       <legend>{t(`layer.${selected}`)}</legend>
       <Button onClick={() => { edit({ visible: !placement.visible }) }}>{t(placement.visible ? 'hideLayer' : 'showLayer')}</Button>
       <Button disabled={placement.x <= 0} onClick={() => { edit({ x: Math.max(0, placement.x - 0.25) }) }}>{t('moveLeft')}</Button>
-      <Button disabled={placement.x >= 10} onClick={() => { edit({ x: Math.min(10, placement.x + 0.25) }) }}>{t('moveRight')}</Button>
+      <Button disabled={placement.x >= HOME_SPACE.width} onClick={() => { edit({ x: Math.min(HOME_SPACE.width, placement.x + 0.25) }) }}>{t('moveRight')}</Button>
       <Button disabled={placement.z <= 0} onClick={() => { edit({ z: Math.max(0, placement.z - 0.25) }) }}>{t('moveBack')}</Button>
-      <Button disabled={placement.z >= 8} onClick={() => { edit({ z: Math.min(8, placement.z + 0.25) }) }}>{t('moveForward')}</Button>
+      <Button disabled={placement.z >= HOME_SPACE.depth} onClick={() => { edit({ z: Math.min(HOME_SPACE.depth, placement.z + 0.25) }) }}>{t('moveForward')}</Button>
       {HOME_FURNITURE[selected].variants.includes('alternate') && <Button onClick={() => { edit({ variant: placement.variant === 'standard' ? 'alternate' : 'standard' }) }}>{t('changeStyle')}</Button>}
     </fieldset>
     {error !== 'none' && <p role="alert">{t(error === 'invalid' ? 'arrangementInvalid' : error === 'conflict' ? 'arrangementConflict' : 'arrangementUnconfirmed')}{error === 'unconfirmed' && <Button onClick={reconnect}>{t('retry')}</Button>}</p>}

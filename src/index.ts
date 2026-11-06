@@ -14,7 +14,7 @@ import { Remote, RemoteError, TypertRemoteService } from '@deepseek-ai/dsh-typer
 import { residentPersona } from './persona.ts'
 import { installResidentTools } from './resident-tools.ts'
 import { residentProjectionDefinition } from './state.ts'
-import { commitHomeArrangement } from './home-arrangement.ts'
+import { commitHomeArrangement } from './host/resident/arrangement.ts'
 import type { HomeLayout, ResidentSnapshot, ResidentState } from './types.ts'
 import { VirtualLivePhone, phoneConfigSchema } from './phone.ts'
 import { installPhoneTools } from './phone-tools.ts'

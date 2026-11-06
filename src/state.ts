@@ -3,9 +3,11 @@ import { z } from 'zod'
 import { pluginRecordOf } from '@deepseek-ai/dsh-session'
 import type { SessionEvent } from '@deepseek-ai/dsh-session'
 import type { ProjectionDefinition } from '@deepseek-ai/dsh-session-projection'
-import type { HomeArrangement, HomeLayout, ResidentExpression, ResidentFurnitureRecord, ResidentFurnitureUse, ResidentIdentity, ResidentJourney, ResidentState } from './types.ts'
+import type { ResidentExpression, ResidentFurnitureRecord, ResidentFurnitureUse, ResidentIdentity, ResidentJourney, ResidentState } from './types.ts'
 import { HOME_LAYER_IDS, HOME_SPACE, initialHomeLayout } from './home-space.ts'
-import { HOME_FURNITURE } from './home-catalog.ts'
+import { homeArrangementSchema, homeLayoutSchema } from './domain/home/layout.ts'
+
+export { homeArrangementSchema, homeLayoutSchema } from './domain/home/layout.ts'
 
 /** Resident identity accepted at the tool and durable-record parsers. */
 export const identitySchema: z.ZodType<ResidentIdentity> = z.object({
@@ -33,19 +35,6 @@ const storedJourneySchema = z.object({
   path: z.array(z.object({ x: z.number(), z: z.number(), facing: z.number().optional(), moving: z.boolean().optional() }).strict()
     .transform(({ x, z }) => ({ x, z }))).min(1).max(256),
   startedAt: z.number().nonnegative(), speed: z.number().positive(),
-}).strict()
-
-/** Complete arrangement data accepted from the wire and durable room records. */
-export const homeLayoutSchema: z.ZodType<HomeLayout> = z.object({
-  background: z.enum(['afternoon', 'night']),
-  layers: z.record(z.enum(HOME_LAYER_IDS), z.object({
-    x: z.number().min(0).max(HOME_SPACE.width), z: z.number().min(0).max(HOME_SPACE.depth),
-    visible: z.boolean(), scale: z.number().min(0.6).max(1.4), variant: z.enum(['standard', 'alternate']),
-  }).strict()),
-}).strict().refine(layout => HOME_LAYER_IDS.every(id => HOME_FURNITURE[id].variants.includes(layout.layers[id].variant)), 'Unavailable furniture artwork')
-
-const arrangementSchema: z.ZodType<HomeArrangement> = z.object({
-  layout: homeLayoutSchema, position: z.object({ x: z.number(), z: z.number() }).strict(), changedAt: z.number().nonnegative(),
 }).strict()
 
 const furnitureUseSchema: z.ZodType<ResidentFurnitureUse> = z.object({
@@ -122,7 +111,7 @@ export function applyResidentEvent(state: ResidentState, event: SessionEvent): R
     return { ...state, journey: use.journey, interaction: use.interaction }
   }
   if (record?.type === 'plugin:dsh-virtuallive/home') {
-    const arrangement = arrangementSchema.parse(record.data)
+    const arrangement = homeArrangementSchema.parse(record.data)
     return {
       ...state, home: arrangement.layout, homeRevision: state.homeRevision + 1, interaction: null,
       journey: { path: [arrangement.position], startedAt: arrangement.changedAt, speed: state.journey.speed },

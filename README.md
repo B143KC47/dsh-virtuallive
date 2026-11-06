@@ -80,6 +80,8 @@ Classic, casual, and night clothing layers share the same two-dimensional skelet
 |---|---|
 | [Service](src/index.ts) | Resident lifetime and authenticated remote actions. |
 | [Projection](src/state.ts) | Validated replay and arrangement revisions. |
+| [Arrangement planning](src/domain/home/arrangement.ts) | Pure revision, layout, and resident-position decision with supplied time. |
+| [Arrangement commit](src/host/resident/arrangement.ts) | DSH append adapter; keeps validation and the durable write synchronous. |
 | [Home geometry](src/home-space.ts) | Furniture collision and reachable destinations. |
 | [Furniture catalog](src/home-catalog.ts) | Shared placement, image registration, and action anchors. |
 | [Furniture interactions](src/home-interaction.ts) | Timed approach, valid attachment, and floor contact. |
