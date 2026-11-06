@@ -1,0 +1,2 @@
+# Keep the integration patch byte-stable so its recorded digest survives checkout.
+dev/*.patch text eol=lf
